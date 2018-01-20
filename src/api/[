@@ -1,0 +1,97 @@
+[
+	{
+		name: '美食',
+		icon: 'meishi',
+		href: '//meishi.meituan.com/i/?ci=20'
+	},
+	{
+		name: '猫眼电影',
+		icon: 'dianying',
+		href: '//m.maoyan.com/imeituan/?_v_=yes&my_traffic_sources=group&ci=20'
+	},
+	{
+		name: '酒店',
+		icon: 'dianying',
+		href: 'https://i.meituan.com/awp/h5/hotel/search/search.html'
+	},
+	{
+		name: '休闲娱乐',
+		icon: 'xiuxianyule',
+		href: '//i.meituan.com/guangzhou/all/?cid=2&cateType=poi'
+	},
+	{
+		name: '外卖',
+		icon: 'waimai',
+		href: '//i.waimai.meituan.com/mti/home?cityId=20'
+	},
+	{
+		name: 'KTV',
+		icon: 'ktv',
+		href: '//i.meituan.com/guangzhou/all/?cid=10&cateType=poi'
+	},
+	{
+		name: '周边游',
+		icon: 'zhoubianyou',
+		href: '//i.meituan.com/trip/lvyou/triplist/poi/'
+	},
+	{
+		name: '丽人',
+		icon: 'liren',
+		href: '/catehome/22'
+	}，
+	{
+		name: '小吃快餐',
+		icon: 'xiaochikuaican',
+		href: '//i.meituan.com/guangzhou/all/?cid=36&cateType=poi'
+	},
+	{
+		name: '机票/火车票',
+		icon: 'icon-circle',
+		href: '//i.meituan.com/trip/train/search/?train_source=meituan@wap'
+	},
+	{
+		name: '今日新单',
+		icon: 'jinrixindan',
+		href: '//i.meituan.com/guangzhou/all/?cid=0&cateType=deal'
+	},
+	{
+		name: '生活服务',
+		icon: 'icon-circle',
+		href: '/catehome/3'
+	},
+	{
+		name: '足疗按摩',
+		icon: 'zuliao',
+		href: '//i.meituan.com/guangzhou/all/?cid=52&cateType=poi'
+	},
+	{
+		name: '甜点饮品',
+		icon: 'yinliaoxiaochi',
+		href: '//i.meituan.com/guangzhou/all/?cid=11&cateType=poi'
+	},
+	{
+		name: '母婴亲子',
+		icon: 'icon-circle',
+		href: 'http://g.meituan.com/app/baby-mtapp-index/index.html#/'
+	},
+	{
+		name: '结婚',
+		icon: 'icon-circle',
+		href: 'https://i.meituan.com/app/app-m-wedding-product-peon/index.html'
+	},
+	{
+		name: '家装',
+		icon: 'icon-circle',
+		href: 'https://i.meituan.com/app/app-m-wedding-product-peon/index.html'
+	},
+	{
+		name: '代金券',
+		icon: 'tuangou',
+		href: '//i.meituan.com/guangzhou/all/?cid=393&cateType=poi'
+	},
+	{
+		name: '全部分类',
+		icon: 'quanbu',
+		href: '//i.meituan.com/guangzhou/all/?cid=393&cateType=poi'
+	}
+]
