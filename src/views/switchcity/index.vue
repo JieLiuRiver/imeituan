@@ -25,29 +25,10 @@
 				<h4>全部城市</h4>
 				<div class="box nopadding vmc-1px-DDD8CE">
 					<ul class="charlist">
-						<li  ><a class="react color-strong">A</a>
-						</li><li  ><a class="react color-strong">B</a>
-						</li><li  ><a class="react color-strong">C</a>
-						</li><li  ><a class="react color-strong">D</a>
-						</li><li  ><a class="react color-strong">E</a>
-						</li><li  ><a class="react color-strong">F</a>
-						</li><li  ><a class="react color-strong">G</a>
-						</li><li  ><a class="react color-strong">H</a>
-						</li><li  ><a class="react color-strong">J</a>
-						</li><li  ><a class="react color-strong">K</a>
-						</li><li  ><a class="react color-strong">L</a>
-						</li><li  ><a class="react color-strong">M</a>
-						</li><li  ><a class="react color-strong">N</a>
-						</li><li  ><a class="react color-strong">P</a>
-						</li><li  ><a class="react color-strong">Q</a>
-						</li><li  ><a class="react color-strong">R</a>
-						</li><li  ><a class="react color-strong">S</a>
-						</li><li  ><a class="react color-strong">T</a>
-						</li><li  ><a class="react color-strong">W</a>
-						</li><li  ><a class="react color-strong">X</a>
-						</li><li  ><a class="react color-strong">Y</a>
-						</li><li  ><a class="react color-strong">Z</a>
-					</li></ul>
+						<li v-for="(letter, i) in letterlist" :key="i" @click="judgeToPos" v-toucheffect="{stopPropagation: true}">
+							<a class="react color-strong">{{letter}}</a>
+						</li>
+					</ul>
 						<div class="abc vmc-1px-t-DDD8CE vmc-1px-b-DDD8CE">
 							<ul class="table">
 								<h4 class="vmc-1px-b-DDD8CE"  id="A">A</h4>
@@ -1348,9 +1329,11 @@
 	import AppHeader from '@/components/app-header'
 	import AppFooter from '@/components/app-footer'
 	import { mapGetters, mapActions } from 'vuex'
+	import Toucheffect from '@/directives/toucheffect'
 	export default {
 		data() {
 			return {
+				heightArrList:[],
 				iconlist: [
 					{
 						name: '主页',
@@ -1362,8 +1345,12 @@
 						type: '⌕',
 						routename: "search"
 					}
-				]
+				],
+				letterlist: ['A','B','C','D','E','F','G','H','J','K','L','M','N','P','Q','R','S','T','W','X','Y','Z']
 			}
+		},
+		directives: {
+			Toucheffect
 		},
 		created() {
 			// this.getCitylist()
@@ -1372,12 +1359,22 @@
 			// ...mapGetters(['citylist'])
 		},
 		mounted() {
-
+			this.$nextTick(() => {
+				let h = 0, hArr = []
+				Array.from(document.querySelectorAll('.abc')).forEach(item => {
+					h += item.clientHeight
+					hArr.push(h)
+				})
+				this.heightArrList = hArr
+			})
 		},
 		methods: {
 			...mapActions([
 				// 'getCitylist'
-			])
+			]),
+			judgeToPos(e) {
+				console.log('e', e)
+			}
 		},
 		components: {
 			AppHeader,
