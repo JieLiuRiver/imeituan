@@ -1,4 +1,4 @@
->  ue2 +vue-router2 + es6 +webpack + vuex 仿美团生活首页
+>  vue2 +vue-router2 + es6 +webpack + vuex 仿美团生活首页
 
 ***
 
