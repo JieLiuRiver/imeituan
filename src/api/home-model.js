@@ -18,7 +18,7 @@ export default class HomeModel extends BaseModel{
 	}
 
 	getHomelist(params) {
-		return process.env.NODE_ENV -== 'production' 
+		return process.env.NODE_ENV === 'production' 
 			? 
 				new Promise((resolve, reject) => {
 				    resolve({data:data.homelist})
