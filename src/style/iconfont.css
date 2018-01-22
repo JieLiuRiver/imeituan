@@ -1,15 +1,15 @@
 @font-face {
 	font-family:iconfont;
-	src:url('http://ms0.meituan.net/touch/css/iconfont/iconfont.woff?t=1489462373204') format('woff');
+	src:url('../assets/fonts/iconfont.woff?t=1489462373204') format('woff');
 }
 @font-face{
 	font-family: cate_icon;
-	src:url('https://ms0.meituan.net/touch/css/i/fonts/cate4.woff?v7') format('woff');
+	src:url('../assets/fonts/cate4.woff?v7') format('woff');
 }
 
 @font-face{
 	font-family: base_icon;
-	src:url('https://ms0.meituan.net/touch/css/i/fonts/base14.woff') format('woff');
+	src:url('../assets/fonts/base14.woff') format('woff');
 }
 
 .iconfont {
