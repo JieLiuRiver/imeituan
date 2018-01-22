@@ -6,8 +6,7 @@
 >  *本项目地址[github地址](https://github.com/stupidWall/imeituan)
 >  * 手机扫一扫
 
-
-![1512439893.png](https://github.com/stupidWall/imeituan)
+![1512439893.png](http://osbfr39w7.bkt.clouddn.com/1516588350.png)
 
 
 
@@ -150,4 +149,4 @@ const mutations = {
 }
 
 ```
-注意，这里要把字体下载下来放在项目目录下，直接访问官方链接的话会有跨域问题，特别是打包上线后。
+注意，这里要把字体下载下来放在项目下引用，直接访问官方链接的话会有跨域问题，特别是打包上线后。
